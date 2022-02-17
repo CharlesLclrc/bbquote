@@ -1,4 +1,4 @@
-HEROKU_EMAIL_ADDRESS=${{secrets.HEROKU_API_KEY}}
+HEROKU_EMAIL_ADDRESS="chl.charlesleclerc@gmail.com"
 
 # ----------------------------------
 #          INSTALL & TEST
