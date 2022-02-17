@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.6, 3.7]
+        python-version: [3.8]
 
     steps:
     - uses: actions/checkout@v2
@@ -43,6 +43,6 @@ jobs:
     - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
       with:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-        heroku_app_name: "bbquote-demo" # Must be unique in Heroku
+        heroku_app_name: "bbquote-demos-2022-02-17" # Must be unique in Heroku
         heroku_email: ${{secrets.HEROKU_EMAIL}}
         procfile: "web: sh setup.sh && streamlit run app.py"
