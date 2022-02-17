@@ -1,4 +1,4 @@
-HEROKU_EMAIL_ADDRESS=replace_with_your_email
+HEROKU_EMAIL_ADDRESS=${{secrets.HEROKU_API_KEY}}
 
 # ----------------------------------
 #          INSTALL & TEST
